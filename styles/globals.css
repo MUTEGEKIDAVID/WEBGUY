@@ -1,0 +1,49 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Nunito&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  @apply scroll-smooth;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ h2 {
+  font-family: 'BDScript';
+ }
+
+ @font-face {
+  font-family: BDScript;
+  src: url("https://static1.squarespace.com/static/566614d0a12f444e2a9419a3/t/615bac42c997be23940bec57/1633397826129/font.woff") format("opentype")
+
+ }
+
+ nav,h1 {
+  font-family: 'Bodoni Moda', serif;
+ }
